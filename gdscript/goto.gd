@@ -2,6 +2,7 @@
 # Goto is a powerful function that is feared by many.
 # Unfortunately, we cannot use it in GDScript directly.
 # We have to bend gdscript to our will.
+# Nothing can stop us (except for the stack limit).
 
 
 var counter := 0
