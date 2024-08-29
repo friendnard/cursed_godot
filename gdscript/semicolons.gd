@@ -47,4 +47,4 @@ func meme_array() -> Array:
   var array := Array()
   ;   array.resize(100)
   ;   array[69] = "nice"
-  ;   return array
+  return array
