@@ -4,12 +4,16 @@
 # We have to bend gdscript to our will.
 # Nothing can stop us (except for the stack limit).
 
-
+## Header
+# We have to pre-declare our variables here.
 var counter := 0
+
+# main loop
 func goto(line := 0) -> int:
   match line:
     00: counter += 1
     01: print(counter)
+    # while loops? we have goto
     02: if counter < 10: goto(0)
     03: return counter
   goto(line + 1)
