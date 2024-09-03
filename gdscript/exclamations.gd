@@ -26,6 +26,8 @@ var icky_is_null:bool = ! $Sticky      # BETTER <3
 var micky_is_real:bool = !! $Micky
 
 
+# Update 4.3: This next section is now less relevant.
+# Freed objects get cast as false now.
 # This becomes more important if you are naughty and don't set freed vars to null.
 # Freed objects are true and their negatives are true.
 # A !! will save you here.
