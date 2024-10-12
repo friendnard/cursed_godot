@@ -9,11 +9,11 @@
 var counter := 0
 
 # main loop
-func goto(line := 0) -> int:
+func goto(line:Variant = 0) -> int:
   match line:
-    00: counter += 1
+    00, "loop_start": counter += 1 # this line is named "loop_start"
     01: print(counter)
     # while loops? we have goto
-    02: if counter < 10: goto(0)
+    02: if counter < 10: goto("loop_start")
     03: return counter
   goto(line + 1)
